@@ -23,11 +23,11 @@ load_dotenv()
 class Config:
     def __init__(self):
         # Telegram API
-        self.API_ID: int = int(getenv("API_ID", "29308061"))
-        self.API_HASH: str = getenv("API_HASH", "462de3dfc98fd938ef9c6ee31a72d099")
-        self.BOT_TOKEN: str = getenv("BOT_TOKEN", "")
-        self.LOGGER_ID: int = int(getenv("LOGGER_ID", "0"))
-        self.OWNER_ID: int = int(getenv("OWNER_ID", "0"))
+        self.API_ID: int = int(getenv("API_ID", "33292815"))
+        self.API_HASH: str = getenv("API_HASH", "4ea5c6176b344f3ceeaef0714b40865e)
+        self.BOT_TOKEN: str = getenv("BOT_TOKEN", "9043501929:AAFG9WTcHuHFacZ6XX4tgwWJ3id7PijkfZY")
+        self.LOGGER_ID: int = int(getenv("LOGGER_ID", "-1003941935781"))
+        self.OWNER_ID: int = int(getenv("OWNER_ID", "8759562595"))
 
         # Database
         self.MONGO_URL: str = getenv("MONGO_DB_URI", "mongodb+srv://Elevenyts:Elevenyts@cluster0.vuyc1u2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -43,8 +43,8 @@ class Config:
         self.SESSION3: str = getenv("STRING_SESSION3", "")
 
         # Support Links
-        self.SUPPORT_CHANNEL: str = getenv("SUPPORT_CHANNEL", "https://t.me/Elevenytschats")
-        self.SUPPORT_CHAT: str = getenv("SUPPORT_CHAT", "https://t.me/Artistbots")
+        self.SUPPORT_CHANNEL: str = getenv("SUPPORT_CHANNEL", "https://t.me/hari_bots_support")
+        self.SUPPORT_CHAT: str = getenv("SUPPORT_CHAT", "https://t.me/hari_bots_chat")
 
         # Excluded Chats
         self.EXCLUDED_CHATS: List[int] = self._parse_excluded_chats()
@@ -58,7 +58,7 @@ class Config:
 
         # ArtistBots API t.me/Artistbots 
         self.ARTISTBOTS_API_URL: str = getenv("ARTISTBOTS_API_URL", "https://artistbotsapi.bond")
-        self.ARTISTBOTS_KEY: str = getenv("ARTISTBOTS_KEY", "")
+        self.ARTISTBOTS_KEY: str = getenv("ARTISTBOTS_KEY", "Artistbotsrgwbvj3j1qmho")
         self.ENABLE_API: bool = self._str_to_bool(getenv("ENABLE_API", "True"))
         self.ENABLE_COOKIES_FALLBACK: bool = self._str_to_bool(getenv("ENABLE_COOKIES_FALLBACK", "True"))
         self.API_TIMEOUT: int = int(getenv("API_TIMEOUT", "60"))
